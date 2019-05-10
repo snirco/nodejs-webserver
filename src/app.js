@@ -11,6 +11,8 @@ const app = express();
 const publicDir = path.join(__dirname, '../public');
 app.use(express.static(publicDir));
 
+const port = process.env.PORT || 3000;
+
 // Setting up view engine as hbs for loading dynamic pages
 app.set('view engine', 'hbs');
 
@@ -67,6 +69,6 @@ app.get('*', (req, res) => {
     });
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000');
+app.listen(port, () => {
+    console.log('Server is up on port ' + port);
 });
