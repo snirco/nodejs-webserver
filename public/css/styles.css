@@ -1,0 +1,27 @@
+body {
+    max-width: 75%;
+    margin: 40px auto;
+}
+
+header {
+    color: #333333;
+    text-align: center;
+    margin: 10px auto;
+    font-family: sans-serif;
+}
+
+footer {
+    text-align: center;
+    margin: 10px auto;
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+
+.bitmoji {
+    width: 200px;
+    border-radius: 25px;
+}
+
+hr {
+    margin: 15px auto;
+}
